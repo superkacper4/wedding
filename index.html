@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nasz Ślub</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&display=swap");
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #a5b884;
+                color: #ffffff;
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* ── Header ── */
+            header {
+                text-align: center;
+                padding: 80px 20px 40px;
+            }
+
+            .pre-title {
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                font-size: 0.85rem;
+                letter-spacing: 0.35em;
+                text-transform: uppercase;
+                opacity: 0.85;
+                margin-bottom: 18px;
+            }
+
+            .names {
+                font-family: "Cormorant Garamond", serif;
+                font-weight: 300;
+                font-size: clamp(3rem, 8vw, 6rem);
+                line-height: 1.1;
+            }
+
+            .ampersand {
+                font-style: italic;
+                display: block;
+                font-size: clamp(2rem, 5vw, 3.5rem);
+                opacity: 0.8;
+                margin: 6px 0;
+            }
+
+            .date {
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                font-size: 1rem;
+                letter-spacing: 0.3em;
+                text-transform: uppercase;
+                margin-top: 28px;
+                opacity: 0.9;
+            }
+
+            /* ── Divider ── */
+            .divider {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                width: min(560px, 90%);
+                margin: 40px auto;
+                opacity: 0.55;
+            }
+
+            .divider::before,
+            .divider::after {
+                content: "";
+                flex: 1;
+                height: 1px;
+                background: #ffffff;
+            }
+
+            .divider-leaf {
+                font-size: 1.1rem;
+            }
+
+            /* ── Cards ── */
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                justify-content: center;
+                padding: 0 20px 80px;
+                width: 100%;
+                max-width: 900px;
+            }
+
+            .card {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(4px);
+                border: 1px solid rgba(255, 255, 255, 0.35);
+                border-radius: 4px;
+                padding: 40px 44px;
+                flex: 1 1 260px;
+                max-width: 380px;
+                text-align: center;
+            }
+
+            .card-icon {
+                font-size: 1.8rem;
+                margin-bottom: 18px;
+                display: block;
+            }
+
+            .card-title {
+                font-family: "Cormorant Garamond", serif;
+                font-size: 1.6rem;
+                font-weight: 400;
+                letter-spacing: 0.05em;
+                margin-bottom: 18px;
+            }
+
+            .card p {
+                font-size: 0.95rem;
+                line-height: 1.8;
+                opacity: 0.9;
+            }
+
+            .card p strong {
+                font-weight: 400;
+                display: block;
+                font-size: 1rem;
+            }
+
+            /* ── Footer ── */
+            footer {
+                margin-top: auto;
+                padding: 24px;
+                font-size: 0.78rem;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                opacity: 0.5;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p class="pre-title">Masz zaszczyt być zaproszony na uroczystość</p>
+            <h1 class="names">
+                Natalia
+                <span class="ampersand">&amp;</span>
+                Kacper
+            </h1>
+            <p class="date">Sobota &nbsp;·&nbsp; Październik 03, 2026</p>
+        </header>
+
+        <div class="divider">
+            <span class="divider-leaf">✦</span>
+        </div>
+
+        <main class="cards">
+            <article class="card">
+                <span class="card-icon">🕐</span>
+                <h2 class="card-title">Ceremonia</h2>
+                <p>
+                    <strong>XX:XX</strong>
+                    Drzwi otwarte o XX:XX<br />
+                    Ceremonia rozpoczyna się<br />
+                    o XX:XX
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">📍</span>
+                <h2 class="card-title">Miejsce</h2>
+                <p>
+                    <strong>Sala balowa Magda</strong>
+                    ul. Janowska 27<br />
+                    Biała Podlaska
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">🥂</span>
+                <h2 class="card-title">Przyjęcie</h2>
+                <p>
+                    <strong>XX:XX</strong>
+                    🎁 → ✉️
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            Nie możemy się doczekać świętowania z Wami &nbsp;✦&nbsp; RRRR
+        </footer>
+    </body>
+</html>
